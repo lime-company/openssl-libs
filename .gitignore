@@ -1,5 +1,10 @@
 # ignore downloaded archives and signatures
 openssl*.tar.gz*
 
+# ignore temporary folders & files
+.openssl-tmp
+src/*
+bin/*
+
 # osx image file
 .DS_Store

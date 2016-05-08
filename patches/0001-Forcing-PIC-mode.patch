@@ -1,0 +1,25 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Juraj=20=C4=8Eurech?= <durech.juraj@gmail.com>
+Date: Fri, 22 Apr 2016 19:37:26 +0200
+Subject: [PATCH] Forcing PIC mode
+
+---
+ crypto/perlasm/x86asm.pl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/crypto/perlasm/x86asm.pl b/crypto/perlasm/x86asm.pl
+index cae156a..bc4ed7b 100644
+--- a/crypto/perlasm/x86asm.pl
++++ b/crypto/perlasm/x86asm.pl
+@@ -286,7 +286,7 @@ EOF
+ 	exit(1);
+     }
+ 
+-    $pic=0;
++    $pic=1;
+     for (@ARGV) { $pic=1 if (/\-[fK]PIC/i); }
+ 
+     $filename =~ s/\.pl$//;
+-- 
+2.7.4
+
