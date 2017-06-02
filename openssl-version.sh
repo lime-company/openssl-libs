@@ -4,7 +4,7 @@
 # Common configuration for all supported platforms
 # -----------------------------------------------------------------------------
 
-COMMON_OPENSSL_VERSION="1.0.2k"
+COMMON_OPENSSL_VERSION="1.0.2l"
 
 # -----------------------------------------------------------------------------
 # Android NDK, API level, etc...
